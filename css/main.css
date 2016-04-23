@@ -1,0 +1,380 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+/* Table of contents
+  - Grid
+  - Base Styles
+  - Typography
+  - Links
+  - Buttons
+  - Forms
+  - Lists
+  - Code
+  - Tables
+  - Spacing
+  - Utilities
+  - Clearing
+  - Media Queries
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+ 	font-size: 100%;
+ 	font: inherit;
+ 	vertical-align: baseline;
+  box-sizing: border-box;
+  font-family:'Avenir W01', Helvetica, Arial, sans-serif;;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+ .push-hover {
+     transform: translate3d(0, 0, 0) scale(1.025)
+ }
+ .has-push-hover:hover .push-hover {
+     transform: scale(1) translate3d(0, 0, 0)
+ }
+ .push-hover {
+     transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1)
+ }
+
+html,
+body {
+  height:100%;
+  background-color: white;
+}
+body {
+  margin: 0;
+}
+.black {
+  background-color:black;
+}
+.grey {
+  background-color: gray;
+}
+.pink {
+  background-color:pink;
+}
+ul li {
+  list-style: none;
+}
+
+/* TYPOGRAPHY */
+h2 {
+  font-weight: 800;
+  color: rgba(0,0,0,0.8);
+}
+
+
+/* GRID */
+header {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+.navigation {
+  padding:1rem 0;
+  text-align: center;
+}
+.navigation li {
+  display: inline-block;
+  margin:0 1rem;
+}
+.navigation a {
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+.navigation span {
+  color: rgba(0,0,0,0.35);
+  text-transform: uppercase;
+  font-weight:600;
+  letter-spacing: 0.5px;
+}
+.navigation span:hover {
+  color: rgba(0,0,0,1);
+}
+#main {
+  width:100%;
+}
+.hero {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding-bottom: 2rem;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.content-wrapper {
+  position: relative;
+  overflow: auto;
+}
+.carousel {
+  height: 100%;
+  background-image: url(http://static1.squarespace.com/static/54244b5ae4b0aded9e49efc4/t/5463b6fde4b0097b957b8017/1415821055168/Wes+Anderson+Spoof.png);
+  background-size: cover;
+}
+.section {
+  position: relative;
+  min-height: 100px;
+  margin-bottom:4rem;
+}
+.container {
+  width: calc(100% - 80px);
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1440px;
+  overflow: hidden;
+}
+.section__header {
+  text-align: center;
+  font-size:2rem;
+  margin:1.5rem 0;
+}
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.grid__item {
+  position: relative;
+  padding: 0 0 0 1.25rem;
+
+}
+.width--50 {
+  width: 50%;
+}
+.width--33 {
+  width: 33.333%
+}
+.width--25 {
+  width: 25%;
+}
+.location__wrapper {
+  width: calc(100% - 0px);
+  padding:2rem;
+  margin: 0 auto;
+  vertical-align: top;
+  display: flex;
+  background-color: rgba(0,0,0,0.25);
+  background-size: cover;
+  background-position: bottom center;
+}
+.location__wrapper:hover .location__information {
+  opacity: 1;
+}
+.location__information {
+  width: 100%;
+  background-color:white;
+  padding:1rem 2rem;
+  opacity: 0;
+}
+.location__information span {
+  display: block;
+}
+.section.quote {
+  margin-bottom: 0;
+}
+.quote .grid__item {
+  background-image: url(http://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201403/289430204.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.quote__information h2 {
+  font-size:5rem;
+  color: white;
+  padding:10rem 0;
+}
+.width--full {
+  width: 100%;
+}
+footer {
+  background-color: navy;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
