@@ -128,6 +128,7 @@ header {
 .navigation {
   padding:1rem 0;
   text-align: center;
+  min-height: 134px;
 }
 .navigation li {
   display: inline-block;
@@ -158,6 +159,32 @@ header {
   padding-bottom: 2rem;
   margin-bottom: 20px;
   overflow: hidden;
+}
+.hero .grid {
+  height: 100%;
+  background-size: cover;
+  background-position: bottom center;
+}
+.hero__wrapper {
+  width: 307px;
+  height: 304px;
+  background-image: url(../img/hero.png);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+.hero h1,
+.hero h2,
+.hero h3,
+.hero h4,
+.hero h5,
+.hero h6 {
+  font-family:'New Century Schoolbook W01', 'Garamond', sans-serif;
+  color: white;
+}
+h2 {
+  font-size: 3.5rem;
 }
 .content-wrapper {
   position: relative;
@@ -194,8 +221,11 @@ header {
 .grid__item {
   position: relative;
   padding: 0 0 0 1.25rem;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .width--50 {
   width: 50%;
 }
