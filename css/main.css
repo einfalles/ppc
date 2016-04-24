@@ -229,6 +229,46 @@ h2 {
   height: 40vh;
   overflow: hidden;
 }
+.image__wrapper {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+.pos-top-left {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.pos-cen-left {
+  align-items: center;
+}
+.quote__wrapper {
+  font-size:1.12rem;
+}
+.divider {
+  border-top-color: #1e1f1f;
+  width: 64px;
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+p {
+  margin: 1rem 0;
+  color: rgba(0,0,0,0.7);
+}
+button {
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 0.15rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(0,0,0,0.5);
+}
+.yellow {
+  background-color: pink;
+}
 .width--50 {
   width: 50%;
 }
