@@ -240,6 +240,18 @@ h2 {
   background-size: cover;
   background-position: center center;
 }
+.about__wrapper p {
+  font-size: 1.15rem;
+  line-height: 2rem;
+}
+.dropcap {
+  font-family:'New Century Schoolbook W01', 'Garamond', sans-serif;
+  font-size:8rem;
+  float: left; color: #903;
+  line-height: 5.666rem;
+  padding-top: 4px; padding-right: 1rem; padding-left: 3px;
+  font-family: Georgia;
+}
 .pos-top-left {
   justify-content: flex-start;
   align-items: flex-start;
@@ -247,8 +259,41 @@ h2 {
 .pos-cen-left {
   align-items: center;
 }
+.pos-top-right {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.align-right {
+  text-align: right;
+}
 .quote__wrapper {
   font-size:1.12rem;
+}
+.caption__wrapper {
+  display: flex;
+}
+.caption--1,
+.caption--2 {
+  padding: 1rem;
+  border-radius: 0;
+  border: 0;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.caption--2 {
+  color: black;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding-left: 0;
+}
+.rot-90 {
+  transform-origin: top left;
+  transform: rotate(90deg) translateY(-640%);;
+}
+.blue {
+  background-color: blue;
 }
 .divider {
   border-top-color: #1e1f1f;
@@ -329,8 +374,23 @@ button {
 footer {
   background-color: navy;
 }
+.h-80 {
+  height: 80vh !important;
+}
 .h-50 {
-  height: 60vh !important;
+  height: 50vh !important;
+}
+.h-30 {
+  height: 30vh !important;
+}
+.h-40 {
+  height: 40vh !important;
+}
+.about--1 .quote__wrapper span {
+  font-family:'New Century Schoolbook W01', 'Garamond', sans-serif;
+}
+.text--large {
+  font-size: 3rem;
 }
 /* ==========================================================================
    Media Queries
