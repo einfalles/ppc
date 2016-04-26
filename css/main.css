@@ -228,6 +228,9 @@ h2 {
   justify-content: center;
   margin-left: -1.25rem;
 }
+.flex-col {
+  flex-direction: column;
+}
 .grid__item {
   position: relative;
   padding: 0 0 0 1.25rem;
@@ -327,6 +330,9 @@ button {
 }
 .yellow {
   background-color: pink;
+}
+.width--60 {
+  width: 60%;
 }
 .width--50 {
   width: 50%;
