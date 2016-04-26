@@ -159,11 +159,12 @@ header {
   padding-bottom: 2rem;
   margin-bottom: 20px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+
 }
 .p-remove {
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 .hero .grid {
   height: 100%;
@@ -362,7 +363,6 @@ button {
   margin-bottom: 0;
 }
 .quote .grid__item {
-  background-image: url(http://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201403/289430204.jpg);
   background-size: cover;
   background-position: center center;
   min-height: 200px;
@@ -371,10 +371,15 @@ button {
   align-items: center;
   color: white;
 }
+.location h2 {
+  font-size:2rem;
+}
 .quote__information h2 {
   font-size:5rem;
   color: white;
-  padding:10rem 0;
+  text-align: center;
+  padding:10rem;
+  font-family:'New Century Schoolbook W01', 'Garamond', sans-serif;
 }
 .width--full {
   width: 100%;
