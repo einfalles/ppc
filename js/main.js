@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $("#demo01").animatedModal();
   $w = $(window)
   $w.on('resize',res);
   res();

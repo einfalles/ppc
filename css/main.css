@@ -159,6 +159,11 @@ header {
   padding-bottom: 2rem;
   margin-bottom: 20px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.p-remove {
+  padding: 0;
 }
 .hero .grid {
   height: 100%;
@@ -185,6 +190,9 @@ header {
 }
 h2 {
   font-size: 3.5rem;
+}
+.dropdown {
+  text-decoration: underline;
 }
 .content-wrapper {
   position: relative;
@@ -373,6 +381,45 @@ button {
 }
 footer {
   background-color: navy;
+}
+.grey {
+  background-color: rgba(0,0,0,0.15);
+}
+.menu__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.menu__item {
+  display: flex;
+  flex-direction: column;
+}
+.menu__header {
+  margin: 0 auto;
+  text-align: center;
+  font-size:2rem;
+}
+.menu__item--title,
+.menu__item--price {
+  display: inline-block;
+  overflow: hidden;
+}
+.m-b-24 {
+  margin-bottom: 1.5rem;
+}
+.m-b-16 {
+  margin-bottom: 1rem;
+}
+.m-b-8 {
+  margin-bottom: 0.5rem;
+}
+.menu__item--price {
+  float: right;
+}
+.m-h-20 {
+  min-height: 20vh;
+}
+.text-white {
+  color: white;
 }
 .h-80 {
   height: 80vh !important;
