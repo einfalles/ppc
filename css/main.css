@@ -231,6 +231,10 @@ a span{
 }
 .caption--x {
   margin:1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
 }
 .caption--x span {
   display: block;
@@ -385,13 +389,76 @@ button {
   margin: 0 auto;
   vertical-align: top;
   display: flex;
-  background-color: rgba(0,0,0,0.25);
+  background-color: rgba(0,0,0,1);
   background-size: cover;
   background-position: bottom center;
   height:100%;
+  position: relative;
 }
 .location__wrapper:hover .location__information {
   opacity: 1;
+}
+.location__wrapper .border {
+  height: 100%;
+  width: 100%;
+  border: 0.25rem solid red;
+  opacity: 0;
+  transition: all 0.15s ease-out;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  padding-bottom: 1.5rem;
+}
+.location__hours {
+  margin-top: 1rem;
+}
+.location__wrapper .border span {
+  font-size: 1.25rem;
+  font-weight: 600;
+  position: relative;
+  width: 100%;
+  color: white;
+  letter-spacing: 0.5px;
+}
+.bg-image {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.25);
+  background-size: cover;
+  background-position: bottom center;
+}
+.miles {
+  font-size: 0.875rem !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.25);
+  position: absolute !important;
+  display: inline-block;
+  right: 0;
+  width: auto !important;
+  top: 12%;
+}
+.location__wrapper .border a:visited {
+  color: white;
+}
+.location__wrapper .border h4 {
+  font-size: 1rem;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Avenir W01', Helvetica, Arial, sans-serif;
+}
+.location__wrapper:hover .border {
+  opacity: 1;
+}
+.location__wrapper:hover .bg-image {
+  opacity:0.6;
 }
 .location__information {
   width: 100%;
@@ -410,7 +477,7 @@ button {
   background-position: center center;
   min-height: 200px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   color: white;
 }
@@ -422,18 +489,51 @@ button {
   text-transform: uppercase;
 
 }
-.quote__information h2 {
-  font-size:5rem;
-  color: white;
+.quote__information {
+  height: 80%;
+  width: 30%;
+  background-color: rgba(255,255,255,0.96);
+  margin-right: 2.823rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:0 1.5rem;
   text-align: center;
-  padding:10rem;
+  z-index: 9;
+}
+.quote__information span {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  color: rgba(0,0,0,0.35);
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.quote__information h4 {
+  font-size: 2rem;
   font-family:'New Century Schoolbook W01', 'Garamond', sans-serif;
+  margin-bottom:1rem;
+}
+.button-secondary {
+  margin-top: 1rem;
+  border:2px solid rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0);
+}
+.border {
+  border: 1px solid rgba(0,0,0,0.25);
+  width:90%;
+  height:90%;
 }
 .width--full {
   width: 100%;
 }
 footer {
-  background-color: navy;
+  background-color: #20456B;
 }
 .grey {
   background-color: rgba(0,0,0,0.15);
@@ -474,6 +574,7 @@ footer {
 .h-66 {
   height: 66.666vh;
 }
+
 .m-h-60 {
   min-height: 60vh;
 }
