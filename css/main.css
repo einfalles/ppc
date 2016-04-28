@@ -47,7 +47,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em 0;
+    margin: 1rem 0;
     padding: 0;
 }
 
@@ -279,7 +279,7 @@ a span{
   align-items: center;
 }
 .m-b-32 {
-  margin-bottom: 3.25rem;
+  margin-bottom: 4rem;
 }
 
 .gallery--1 .grid__item{
@@ -368,9 +368,8 @@ button {
   font-weight: 600;
   color: rgba(0,0,0,0.5);
 }
-.yellow {
-  background-color: pink;
-}
+
+
 .width--60 {
   width: 60%;
 }
@@ -421,7 +420,7 @@ button {
   margin-top: 1rem;
 }
 .location__wrapper .border span {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
   position: relative;
   width: 100%;
@@ -602,7 +601,7 @@ footer .grid__item * {
   margin-top: 1rem;
   position: relative;
   display: inline-block;
-  padding: 0 1em;
+  padding: 0.25rem 1rem;
   color: white !important;
   background-color: transparent;
   vertical-align: middle;
@@ -632,6 +631,7 @@ footer .grid__item * {
     transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     animation: hover-out 0.2s 1
 }
+
 .button-secondary:after {
     content: "";
     position: absolute;
@@ -641,7 +641,7 @@ footer .grid__item * {
     height: 100%;
     top: 100%;
     left: 0;
-    background-color: pink;
+    background-color: rgba(255,255,255,0.2);
     border-radius: 2px;
     transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     animation: hover-out 0.4s 1;
@@ -652,6 +652,20 @@ footer .grid__item * {
 }
 .button-secondary:hover {
     background-color: #5f5f5f !important;
+}
+/*.yellow:before {
+  background-color: rgba(0,0,0,0);
+}
+.yellow {
+  border: 1px solid red;
+  color: black !important;
+  background-color: rgba(0,0,0,0);
+}*/
+.yellow:after {
+  background-color: pink;
+}
+.yellow:hover {
+  background-color: pink !important;
 }
 .button-secondary:hover:after {
     animation: hover-in 0.25s 1;
@@ -684,7 +698,8 @@ footer .grid__item * {
   width: 100%;
 }
 footer {
-  background-color: ##F6F6F7;
+  background-color: #F6F6F6;
+  border-top:1px solid rgba(0,0,0,0.05);
   padding:3.5rem 0;
 }
 footer h4 {
@@ -726,6 +741,9 @@ footer a:hover {
 .menu__item--price {
   display: inline-block;
   overflow: hidden;
+}
+.m-b-322 {
+  margin-bottom: 2rem;
 }
 .m-b-24 {
   margin-bottom: 1.5rem;
@@ -778,6 +796,16 @@ footer a:hover {
 }
 .text--large {
   font-size: 3rem;
+}
+.square {
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  background-color: red;
+  top: 0;
+  opacity: 1;
+  z-index: 99;
+  left: 0;
 }
 /* ==========================================================================
    Media Queries
