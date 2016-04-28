@@ -469,8 +469,11 @@ button {
 .location__information span {
   display: block;
 }
-.section.quote {
+.m-b-0 {
   margin-bottom: 0;
+}
+.m-b-64{
+  margin-bottom: 64px;
 }
 .quote .grid__item {
   background-size: cover;
@@ -510,6 +513,7 @@ button {
 }
 footer .grid__item {
   align-items: flex-start;
+  padding-left:3rem;
 }
 footer .grid__item * {
   color: white;
@@ -520,7 +524,6 @@ footer .grid__item * {
   width: 100%;
   height: 50px;
   font-size: 1.0625rem;
-  font-weight: 700;
   line-height: 1.375rem;
   background-color: rgb(241, 238, 238);
   background-image: none;
@@ -534,8 +537,7 @@ footer .grid__item * {
   border-style: none;
   border-color: initial;
   border-radius: 0px;
-  border-radius: 2px;
-  color: black;
+  color: black !important;
   transition: border-color 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .form-group {
@@ -553,7 +555,6 @@ footer .grid__item * {
   max-height: 50px;
   width: 5rem;
   font-size: 1.125rem;
-  font-weight: 900;
   margin-left: 5px;
   cursor: pointer;
   border-width: 0px;
@@ -561,7 +562,7 @@ footer .grid__item * {
   border-color: initial;
   transition: background-color 0.1s;
   margin-left: 0.25rem !important;
-  border-radius: 2px;
+  border-radius: 0px;
 }
 .m-r-10 {
   margin-right: 8%;
@@ -602,14 +603,27 @@ footer .grid__item * {
 }
 footer {
   background-color: #20456B;
-  padding:2.5rem 0;
+  padding:3.5rem 0;
 }
 footer h4 {
   letter-spacing: 2px;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom:1rem !important;
+  text-transform: uppercase;
 }
+footer a {
+  text-decoration: none;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  /* ^- the important bit. RGB 192,192,192 is the same as #C0C0C0*/
+  transition: border 250ms ease-out;
+}
+
+footer a:hover {
+  border-bottom: 1px solid rgba(255,255,255,1);
+}
+
 .grey {
   background-color: rgba(0,0,0,0.15);
 }
