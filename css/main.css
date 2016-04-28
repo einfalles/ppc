@@ -506,6 +506,74 @@ button {
   padding:0 1.5rem;
   text-align: center;
   z-index: 9;
+  position: relative;
+}
+footer .grid__item {
+  align-items: flex-start;
+}
+footer .grid__item * {
+  color: white;
+  margin:0.235rem 0;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.375rem;
+  background-color: rgb(241, 238, 238);
+  background-image: none;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  padding: 14px 21px;
+  border-width: 0px;
+  border-style: none;
+  border-color: initial;
+  border-radius: 0px;
+  border-radius: 2px;
+  color: black;
+  transition: border-color 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.form-group {
+  display: flex;
+  flex-direction: row;
+}
+.form__submit {
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  color: rgb(255, 255, 255);
+  background-color: rgb(228, 128, 128);
+  max-height: 50px;
+  width: 5rem;
+  font-size: 1.125rem;
+  font-weight: 900;
+  margin-left: 5px;
+  cursor: pointer;
+  border-width: 0px;
+  border-style: none;
+  border-color: initial;
+  transition: background-color 0.1s;
+  margin-left: 0.25rem !important;
+  border-radius: 2px;
+}
+.m-r-10 {
+  margin-right: 8%;
+}
+.border .glyph {
+  position: absolute;
+  z-index: 0;
+  color: rgba(0,0,0,0.05);
+  top: 15%;
+  left: 10%;
+  font-size:15rem;
+  font-family: 'New Century Gothic';
 }
 .quote__information span {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -534,6 +602,13 @@ button {
 }
 footer {
   background-color: #20456B;
+  padding:2.5rem 0;
+}
+footer h4 {
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom:1rem !important;
 }
 .grey {
   background-color: rgba(0,0,0,0.15);
