@@ -1915,13 +1915,13 @@ button:focus {
     width: 100vw;
 }
 
-.work-footer .work-hero-content .work-hero-content-wrapper {
+.work-footer .work-hero-content .work-hero-content {
     margin-top: 0;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
-.work-footer .work-hero-content .work-hero-content-wrapper .work-hero-icon-container {
+.work-footer .work-hero-content .work-hero-content .work-hero-icon-container {
     display: none;
 }
 
@@ -1956,7 +1956,7 @@ button:focus {
     height: 112px;
 }
 
-.work-hero-content-wrapper {
+.work-hero-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -1964,11 +1964,11 @@ button:focus {
     text-align: center;
 }
 
-.work-hero-content-wrapper.is-loading {
+.work-hero-content.is-loading {
     margin-top: -61px;
 }
 
-.work-hero-content-wrapper .work-hero-icon-container {
+.work-hero-content .work-hero-icon-container {
     position: absolute;
     display: block;
     width: 100%;
@@ -1976,37 +1976,37 @@ button:focus {
     top: -16rem;
 }
 
-.work-hero-content-wrapper .work-hero-icon-container .work-hero-icon {
+.work-hero-content .work-hero-icon-container .work-hero-icon {
     position: relative;
     width: 18rem;
     height: 18rem;
 }
 
-.work-hero-content-wrapper .work-hero-content-container {
+.work-hero-content .work-hero-content-container {
     position: relative;
 }
 
-.work-hero-content-wrapper .work-hero-content-container .work-hero-footer,.work-hero-content-wrapper .work-hero-content-container .work-hero-index {
+.work-hero-content .work-hero-content-container .work-hero-footer,.work-hero-content .work-hero-content-container .work-hero-index {
     position: absolute;
     width: 100%;
 }
 
-.work-hero-content-wrapper .work-hero-content-container .work-hero-index {
+.work-hero-content .work-hero-content-container .work-hero-index {
     padding-right: 15vw;
     padding-left: 15vw;
 }
 
-.work-hero-content-wrapper .work-hero-content-container .btn-view-project {
+.work-hero-content .work-hero-content-container .btn-view-project {
     margin: 0 .7rem;
 }
 
-.work-hero-content-wrapper .work-hero-content-container .work-hero-footer {
+.work-hero-content .work-hero-content-container .work-hero-footer {
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
-.work-hero-content-wrapper .work-hero-content-container .work-hero-detail {
+.work-hero-content .work-hero-content-container .work-hero-detail {
     width: 100%;
     max-width: 1024px;
     margin-right: auto;
@@ -2014,135 +2014,135 @@ button:focus {
     padding: 0 15%;
 }
 
-.work-hero-content-wrapper .work-hero-content-container .work-hero-detail .tags {
+.work-hero-content .work-hero-content-container .work-hero-detail .tags {
     display: none;
 }
 
 @media (min-width:768px) {
-    .work-hero-content-wrapper .work-hero-content-container .work-hero-detail .tags {
+    .work-hero-content .work-hero-content-container .work-hero-detail .tags {
         display: block;
     };
 }
 
-.work-hero-content-wrapper .work-hero-content-container .work-hero-detail h2 {
+.work-hero-content .work-hero-content-container .work-hero-detail h2 {
     line-height: 1.15;
     white-space: pre-line;
 }
 
-.work-hero-content-wrapper .work-hero-content-container .animated-down-arrow {
+.work-hero-content .work-hero-content-container .animated-down-arrow {
     margin-top: 3rem;
     cursor: pointer;
 }
 
-.work-hero-content-wrapper .work-hero-content-container h4,.work-hero-content-wrapper .work-hero-content-container h4:before {
+.work-hero-content .work-hero-content-container h4,.work-hero-content .work-hero-content-container h4:before {
     font-size: 3.6vmin;
 }
 
-.work-hero-content-wrapper .work-hero-content-container h1,.work-hero-content-wrapper .work-hero-content-container h1:before {
+.work-hero-content .work-hero-content-container h1,.work-hero-content .work-hero-content-container h1:before {
     font-size: 8vmin;
 }
 
-.work-hero-content-wrapper .work-hero-content-container a,.work-hero-content-wrapper .work-hero-content-container h1,.work-hero-content-wrapper .work-hero-content-container h4 {
+.work-hero-content .work-hero-content-container a,.work-hero-content .work-hero-content-container h1,.work-hero-content .work-hero-content-container h4 {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
 }
 
-.work-hero-content-wrapper .work-hero-content-container p {
+.work-hero-content .work-hero-content-container p {
     line-height: 1.4;
     margin-bottom: 1.2rem;
 }
 
-.work-hero-content-wrapper .work-hero-content-container .fancy-button {
+.work-hero-content .work-hero-content-container .fancy-button {
     margin-top: 2rem;
 }
 
-.work-hero-content-wrapper a {
+.work-hero-content a {
     color: #fff;
     text-decoration: none;
 }
 
 @media (min-width:650px) {
-    .work-hero-content-wrapper {
+    .work-hero-content {
         margin-top: -5.5rem;
     }
 
-    .work-hero-content-wrapper .work-hero-icon-container {
+    .work-hero-content .work-hero-icon-container {
         height: 20rem;
         top: -18rem;
     }
 
-    .work-hero-content-wrapper .work-hero-icon-container .work-hero-icon {
+    .work-hero-content .work-hero-icon-container .work-hero-icon {
         width: 20rem;
         height: 20rem;
     }
 
-    .work-hero-content-wrapper .work-hero-icon-container .fancy-button {
+    .work-hero-content .work-hero-icon-container .fancy-button {
         margin-top: 1rem;
     }
 
-    .work-hero-content-wrapper .work-hero-content-container .work-hero-index {
+    .work-hero-content .work-hero-content-container .work-hero-index {
         padding-right: 7.5vw;
         padding-left: 7.5vw;
     };
 }
 
 @media (min-width:1024px) {
-    .work-hero-content-wrapper .work-hero-icon-container {
+    .work-hero-content .work-hero-icon-container {
         height: 22rem;
         top: -20rem;
     }
 
-    .work-hero-content-wrapper .work-hero-icon-container .work-hero-icon {
+    .work-hero-content .work-hero-icon-container .work-hero-icon {
         width: 22rem;
         height: 22rem;
     }
 
-    .work-hero-content-wrapper .work-hero-content-container h4 {
+    .work-hero-content .work-hero-content-container h4 {
         margin-bottom: 1vh;
     }
 
-    .work-hero-content-wrapper .work-hero-content-container h1 {
+    .work-hero-content .work-hero-content-container h1 {
         margin-bottom: 2vh;
     }
 
-    .no-touchevents .work-hero-content-wrapper .work-hero-content-container .work-hero-footer {
+    .no-touchevents .work-hero-content .work-hero-content-container .work-hero-footer {
         padding: 0 5%;
         transition: -webkit-transform .5s cubic-bezier(.86,0,.07,1);
         transition: transform .5s cubic-bezier(.86,0,.07,1);
         transition: transform .5s cubic-bezier(.86,0,.07,1),-webkit-transform .5s cubic-bezier(.86,0,.07,1);
     }
 
-    .no-touchevents .work-hero-content-wrapper .work-hero-content-container .work-hero-footer h4 {
+    .no-touchevents .work-hero-content .work-hero-content-container .work-hero-footer h4 {
         margin-bottom: -40px;
         color: hsla(0,0%,100%,0);
         transition: all .5s cubic-bezier(.86,0,.07,1);
     }
 
-    .no-touchevents .work-hero-content-wrapper .work-hero-content-container .work-hero-footer .hover-mask {
+    .no-touchevents .work-hero-content .work-hero-content-container .work-hero-footer .hover-mask {
         height: 7vmin;
         overflow: hidden;
     }
 
-    .no-touchevents .work-hero-content-wrapper .work-hero-content-container .work-hero-footer h1 {
+    .no-touchevents .work-hero-content .work-hero-content-container .work-hero-footer h1 {
         margin: 0;
         white-space: nowrap;
         line-height: 7vmin;
         transition: margin .5s cubic-bezier(.86,0,.07,1);
     }
 
-    .no-touchevents .work-hero-content-wrapper .work-hero-content-container .work-hero-footer h1:before {
+    .no-touchevents .work-hero-content .work-hero-content-container .work-hero-footer h1:before {
         content: 'Next Project';
         width: 100%;
         display: block;
         font-family: IntroBlackCaps,sans-serif;
     }
 
-    .no-touchevents .footer-animation .work-hero-content-wrapper .work-hero-content-container .work-hero-footer h4,.no-touchevents .work-footer:hover .work-hero-content-wrapper .work-hero-content-container .work-hero-footer h4 {
+    .no-touchevents .footer-animation .work-hero-content .work-hero-content-container .work-hero-footer h4,.no-touchevents .work-footer:hover .work-hero-content .work-hero-content-container .work-hero-footer h4 {
         margin-bottom: 1rem;
         color: #fff;
     }
 
-    .no-touchevents .footer-animation .work-hero-content-wrapper .work-hero-content-container .work-hero-footer h1,.no-touchevents .work-footer:hover .work-hero-content-wrapper .work-hero-content-container .work-hero-footer h1 {
+    .no-touchevents .footer-animation .work-hero-content .work-hero-content-container .work-hero-footer h1,.no-touchevents .work-footer:hover .work-hero-content .work-hero-content-container .work-hero-footer h1 {
         margin-top: -7vmin;
     };
 }
@@ -2152,25 +2152,25 @@ button:focus {
         height: 42rem;
     }
 
-    .work-hero-content-wrapper {
+    .work-hero-content {
         margin-top: -4rem;
     }
 
-    .work-hero-content-wrapper .work-hero-icon-container {
+    .work-hero-content .work-hero-icon-container {
         height: 25rem;
         top: -22rem;
     }
 
-    .work-hero-content-wrapper .work-hero-icon-container .work-hero-icon {
+    .work-hero-content .work-hero-icon-container .work-hero-icon {
         width: 25rem;
         height: 25rem;
     }
 
-    .work-hero-content-wrapper .work-hero-content-container h1,.work-hero-content-wrapper .work-hero-content-container h1:before {
+    .work-hero-content .work-hero-content-container h1,.work-hero-content .work-hero-content-container h1:before {
         font-size: 9vmin;
     }
 
-    .work-hero-content-wrapper .work-hero-content-container .work-hero-detail {
+    .work-hero-content .work-hero-content-container .work-hero-detail {
         padding-right: 0;
         padding-left: 0;
     };
