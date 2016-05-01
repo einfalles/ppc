@@ -153,41 +153,9 @@
   height: 100%; /* close? */
 
 }
+
 /* QUESTIONABLE */
-.width--full {
-     width: 100%;
-   }
-.width--60 {
-  width: 60%;
-}
-.width--50 {
-  width: 50%;
-}
-.width--33 {
-  width: 33.333%
-}
-.width--25 {
-  width: 25%;
-}
-.quote__information {
-  height: 80%;
-  width: 30%;
-  background-color: rgba(255,255,255,0.96);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* QUESTIONABLE */
-.border {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding:0 1.5rem;
-  text-align: center;
-  z-index: 9;
-  position: relative;
-}
+
 .bg-white {
   background-color: white !important;
 }
@@ -195,12 +163,7 @@ footer .column {
   align-items: flex-start;
   padding-left:3rem;
 }
-.location__information {
-  width: 100%;
-  background-color:white;
-  padding:1rem 2rem;
-  opacity: 0;
-}
+
 .quote {
   background-size: cover;
   background-position: center center;
@@ -243,9 +206,7 @@ header {
   background-size: cover;
   background-position: center center;
 }
-.content__wrapper:hover .location__information {
-  opacity: 1;
-}
+
 .content__wrapper .border {
   height: 100%;
   width: 100%;
@@ -325,18 +286,19 @@ header {
 * {
   margin: 0;
   padding: 0;
- 	font-size: 100%;
- 	font: inherit;
-  line-height: 1.4;
  	vertical-align: baseline;
   box-sizing: border-box;
-  font-family:'Avenir W01', Helvetica, Arial, sans-serif;;
+
 }
 
 html,
 body {
   height:100%;
+  font-size: 100%;
+ 	font: inherit;
+  line-height: 1.4;
   background-color: white;
+  font-family:'Avenir W01', Helvetica, Arial, sans-serif;
 }
 
 hr {
@@ -370,6 +332,7 @@ h5,
 h6 {
   font-family:'Tablet Gothic W01';
   font-weight: 600;
+  margin: 0;
   color: rgba(0,0,0,0.7);
   text-transform: uppercase;
 }
@@ -409,25 +372,23 @@ h6 {
 }
 
 
-   .location__information span {
-     display: block;
-   }
 
 
-
-   .about--1 .quote__wrapper span {
-     font-family:'New Century Schoolbook W01', 'Garamond', sans-serif;
-   }
    .text--large {
      font-size: 3rem;
    }
    .dropdown {
      text-decoration: underline;
    }
-   .about__wrapper p {
-     font-size: 1.15rem;
-     line-height: 2rem;
-   }
+.about__wrapper p {
+   font-size: 1.15rem;
+   line-height: 2rem;
+}
+.about__wrapper h2 {
+  font-size: 3rem;
+  font-family:'New Century Schoolbook W01', 'Garamond', sans-serif;
+  text-transform: none;
+}
    .bold {
      font-weight: 700;
    }
@@ -446,14 +407,6 @@ h6 {
      line-height: 5.666rem;
      padding-top: 4px; padding-right: 1rem; padding-left: 3px;
      font-family: Georgia;
-   }
-   h3 {
-     font-size: 2.5rem;
-     font-weight: 600;
-   }
-   p {
-     margin: 1rem 0;
-     color: rgba(0,0,0,0.7);
    }
    .content__wrapper .border a:visited {
      color: white;
@@ -485,28 +438,26 @@ h6 {
    }
 
 
-   .quote__wrapper {
-     font-size:1.12rem;
-   }
-   .caption__wrapper {
-     display: flex;
-   }
-   .caption--1,
-   .caption--2 {
-     padding: 1rem;
-     border-radius: 0;
-     border: 0;
-     color: white;
-     font-size: 0.875rem;
-     font-weight: 600;
-     text-transform: capitalize;
-   }
-   .caption--2 {
-     color: black;
-     font-size: 1rem;
-     letter-spacing: 1px;
-     padding-left: 0;
-   }
+
+.caption__wrapper {
+  display: flex;
+  width: 100%;
+}
+.cap-1,
+.cap-2 {
+  padding: 1rem;
+  border-radius: 0;
+  border: 0;
+  text-transform: capitalize;
+}
+.cap-2 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding-left: 0;
+  padding-top: 0;
+  position: absolute;
+  right: 0;
+}
 
    .border--alt span {
      font-family: 'Avenir', Helvetica, Arial, sans-serif !important;
@@ -567,7 +518,6 @@ h6 {
    color: rgba(0,0,0,0.5);
  }
  .button-secondary {
-   margin-top: 1rem;
    position: relative;
    display: inline-block;
    padding: 0.25rem 1rem;
@@ -634,6 +584,14 @@ h6 {
 }
 
  .border {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding:0 1.5rem;
+   text-align: center;
+   z-index: 9;
+   position: relative;
    border: 1px solid rgba(0,0,0,0.25);
    width:90%;
    height:90%;
@@ -718,14 +676,58 @@ h6 {
   margin: 0 auto;
   text-align: center;
   font-size:2rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.menu__divider {
+  min-width: 20px;
+  display: flex;
+  flex-grow: 1;
+  border: none;
+  border-top: 5px double red;
+  border-bottom: 5px double red;
+  color: red;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.menu__divider hr {
+  width: 100%;
+  border-top: 2px dotted red;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__divider hr:after {
+  content: "★";
+  position: relative;
+  font-size: 1rem;
+  font-weight: normal;
+  color: red;
+  background-color: white;
+  padding: 0 6px;
+}
+.menu__header--title {
+  margin:0 0.5rem;
 }
 .menu__item--title,
 .menu__item--price {
   display: flex;
   overflow: hidden;
+  font-size: 1rem;
+
+}
+.menu__item--title span:not(.menu__item--price) {
+  font-weight: 600;
+  font-family:'New Century Schoolbook W01', 'Garamond', sans-serif;
 }
 .menu__item--price {
   margin-left: auto;
+}
+.menu__item--description {
+  font-size: 1rem;
 }
 .menu__item .badge {
   border-radius: 50%;
@@ -733,6 +735,8 @@ h6 {
   color: white;
   text-align: center;
   font-size: 0.75rem;
+  font-weight: 500;
+  font-family:'Avenir W01', Helvetica, Arial, sans-serif !important;
 }
 /*
     margin bottom
@@ -883,11 +887,11 @@ h6 {
   width: 64px;
 }
 
-.content__wrapper:hover .border {
+.has-info.content__wrapper:hover .border {
   opacity: 1;
   border: 1px solid rgba(234,116,16,1);
 }
-.content__wrapper:hover .bg-image {
+.has-info.content__wrapper:hover .bg-image {
   opacity:0.6;
 }
 
