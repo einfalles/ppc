@@ -20,7 +20,7 @@
       <li><a href="./gallery.html">Gallery</a></li>
       <li><a href="./" style="border:0;"><img src="http://www.mysteryboxshow.com/wp-content/uploads/2014/02/Pacific-Pie-Sponsor.png" width="70%" height="auto" style="border:0;"/></a></li>
       <li><a href="#">Catering</a></li>
-      <li><a href="#">Blog</a></li>
+      <li><a href="#">Press</a></li>
       <li><a href="./about.html">About</a></li>
     </ul>
   </header>
@@ -44,7 +44,7 @@
           <div class="grid">
             <div class="column four">
               <div class="content__wrapper h-50">
-                <div class="bg-image"  style="background-image:url(http://www.champagnenw.com/images/uploads/Carl_Zoch_Wilsons0383_thumb.jpg);"></div>
+                <div class="insta-image bg-image" style=""></div>
               </div>
 
             </div>
@@ -136,7 +136,7 @@
             </div>
             <div class="column four h-50">
               <div class="content__wrapper">
-                <div class="bg-image" style="background-image:url(./img/cheers-2.jpg);"></div>
+                <div class="insta-image bg-image" style=""></div>
               </div>
             </div>
             <div class="column four h-50">
@@ -218,13 +218,75 @@
         <span style="color: rgba(0,0,0,0.5); font-size: 0.875rem;">© 2009-2016 PACIFIC PIE | ALL RIGHTS RESERVED | OPEN NOW </span>
       </div>
     </div>
+    <div id="instafeed"></div>
   </footer>
-
+  <div id="yo"></div>
+  <style>
+  #yo {
+    display: none;
+  }
+  </style>
   <!-- SCRIPTS -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
+  <script src="instafeed.min.js"></script>
   <script src="http://joaopereirawd.github.io/animatedModal.js/js/animatedModal.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+
+      (function () {
+        var demoFeed, hash, hashParts, token, tokenParts, user, message;
+
+        // run instafeed
+        demoFeed = new Instafeed({
+          limit: 3,
+          get: 'user',
+          userId: '377563329',
+          clientId: '0bfd50b824744e1983a97ca4b776dc01',
+          accessToken: '48157970.1677ed0.38a8c8dea9f047eabc795c537c121d51',
+          target: 'yo',
+          template: '<img src="{{image}}"/>',
+          after: function(){
+            var temp = []
+            $("#yo img").each(function(){
+              temp.push(this.src);
+              console.log(this.src);
+            });
+            $(".insta-image").each(function(index){
+              $(this).css('background-image','url('+temp[index]+')');
+            });
+          }
+        }).run();
+
+        // show the user their token and hash
+        if(window.location.hash) {
+          // get the hash
+          hash = window.location.hash;
+
+          // get the access token
+          hashParts = hash.split('=');
+          token = hashParts[1];
+
+          // get the user
+          tokenParts = token.split('.');
+          user = tokenParts[0];
+
+          // show the message
+          if(typeof(user) === 'string' && typeof(token) === 'string') {
+            message = document.createElement('p');
+            message.className = 'flash good';
+            message.innerHTML = '<small>Success! Use the userId and token listed below to get your images:<br /><b>userId:</b> ' + user + '<br /><b>accessToken:</b> '  + token + '</small>';
+            document.getElementById('messages').appendChild(message);
+          }
+        }
+
+      })();
+
+      // $(".insta-image").each(function(index){
+      //   $(this).css('background-image','url('+temp[index]+')')
+      // });
+
+  </script>
 </body>
 </html>

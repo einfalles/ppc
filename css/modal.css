@@ -1,3 +1,40 @@
 .modal__wrapper {
   height: 100%;
 }
+.modal-catering {
+  background-image: url('../img/blueberry.jpg') ;
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 636px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.catering-header {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.catering-item {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.catering-item-title {
+    font-weight: 700;
+}
+
+.catering-item-note {
+    opacity: 0.5;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+.catering-header-note{
+  font-size: 1rem;
+  opacity: 0.5;
+  margin-top: -0.25rem;
+}

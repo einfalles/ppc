@@ -18,27 +18,66 @@
   <header>
     <ul class="navigation">
       <li><a href="./menu.html">Menus</a></li>
-      <li><a href="./classes.html">Classes</a></li>
+      <li><a href="#class-picker" id="classes">Classes</a></li>
       <li><a href="./gallery.html">Gallery</a></li>
       <li><a href="./" style="border:0;"><img src="http://www.mysteryboxshow.com/wp-content/uploads/2014/02/Pacific-Pie-Sponsor.png" width="70%" height="auto" style="border:0;"/></a></li>
       <li><a href="#">Catering</a></li>
-      <li><a href="#">Blog</a></li>
+      <li><a href="#">Press</a></li>
       <li><a href="./about.html">About</a></li>
     </ul>
   </header>
+  <style>
+    .anti-push {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 10;
+      top:0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      left:0;
+      padding:5%;
+    }
+    .modal-content {
+      width: 100%;
+      height: 100%;
+    }
+    iframe{
+      border:0;
+      height:100%;
+      width: 100%;
+    }
+    .button-green:before {
+      background-color: #42B37F;
+    }
+  </style>
+  <script>
+  function openWin() {
+      window.open("http://www.opentable.com/pacific-pie-co-reservations-portland?rtype=ism&restref=213073");
+  }
+  </script>
   <div id="main">
     <div class="hero has-push-hover mb-4">
       <div class="container">
         <ul class="carousel push-hover">
-          <li class="carousel__item">
+          <!-- <li class="carousel__item anti-push">
             <div class="carousel__image">
               <img src=""/>
             </div>
             <div class="carousel__line">
-              <span></span>
+              <button class="button-secondary z-1 mb-0">Read More Reviews</button>
             </div>
-          </li>
+          </li> -->
         </ul>
+        <div class="anti-push">
+          <h2 class="text-dark mb-6">Try our delicious pies. Save a table for dinner!</h2>
+          <button id="reserve" href="#animatedModal" class="button-secondary button-green z-1 mb-0" >Reserve</button>
+          <!-- <div class="OTButton"> -->
+            <!-- <script type="text/javascript" src="https://secure.opentable.com/ism/link.aspx?rid=213073&restref=213073&bgimage=https://secure.opentable.com/img/frontDoor/ot_btn_red.png"></script> -->
+          <!-- </div> -->
+        </div>
       </div>
     </div>
     <div class="content">
@@ -54,7 +93,7 @@
                 <div class="border">
                   <span>
                     <a href="" class="link--alt underline-dark text-dark">1668 NW 23rd Ave</a>
-                    <span class="miles">0.2 mi</span>
+                    <a href="" class="miles">Directions</a>
                   </span>
                   <span class="mb-6">503-333-4444</span>
                   <div class="container full">
@@ -86,7 +125,8 @@
               <div class="content__wrapper has-info h-80  has-push-hover mb-6">
                 <div class="bg-image push-hover"  style="background-image: url(http://portland.thedrinknation.com/images/bars/pacificpiecophilly.jpg);"></div>
                 <div class="border">
-                  <span><a href="" class="link--alt underline-dark text-dark">1668 NW 23rd Ave</a> <span class="miles">0.2 mi</span></span>
+                  <span><a href="" class="link--alt underline-dark text-dark">1668 NW 23rd Ave</a>
+                    <a href="" class="miles">Directions</a></span>
                   <span class="mb-6">503-333-4444</span>
                     <div class="grid full">
                       <div class="column six">
@@ -115,7 +155,7 @@
               <div class="content__wrapper  has-info h-80 has-push-hover mb-6">
                 <div class="bg-image push-hover"  style="background-image: url(http://portland.thedrinknation.com/images/bars/pacificpiecophilly.jpg);"></div>
                 <div class="border">
-                  <span><a href="" class="link--alt underline-dark text-dark">1668 NW 23rd Ave</a> <span class="miles">0.2 mi</span></span>
+                  <span><a href="" class="link--alt underline-dark text-dark">1668 NW 23rd Ave</a> <a href="" class="miles">Directions</a></span>
                   <span class="mb-6">503-333-4444</span>
 
                     <div class="grid full">
@@ -222,11 +262,51 @@
       </div>
     </div>
   </footer>
+  <!--DEMO01-->
+  <style>
+  .overlay {
+    background-color: rgba(0,0,0,0.8) !important;
+    padding:2rem;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .floater {
+    position: absolute;
+    top: 1%;
+  }
+  </style>
+  <div id="animatedModal" class="overlay">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+      <div class="close-animatedModal">
+        <span class="text-dark cursor-pointer floater" >CLOSE</span>
+      </div>
+
+      <div class="modal-content">
+        <iframe src="http://www.opentable.com/pacific-pie-co-reservations-portland?rtype=ism&restref=213073"></iframe>
+      </div>
+  </div>
+  <div id="class-picker" class="overlay">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+      <div class="close-class-picker">
+        <span class="text-dark cursor-pointer floater" >CLOSE</span>
+      </div>
+
+      <div class="modal-content">
+        <iframe src="./classes.html"></iframe>
+      </div>
+  </div>
   <!-- SCRIPTS -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="http://joaopereirawd.github.io/animatedModal.js/js/animatedModal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplemodal/1.4.4/jquery.simplemodal.min.js"></script>
   <script src="js/main.js"></script>
+
+  <script>
+    $("#reserve").animatedModal();
+    $("#classes").animatedModal({modalTarget:'class-picker'});
+  </script>
 </body>
 </html>

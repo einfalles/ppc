@@ -738,6 +738,9 @@ h6 {
   font-weight: 500;
   font-family:'Avenir W01', Helvetica, Arial, sans-serif !important;
 }
+.dropdown-container {
+  padding: 1rem 0;
+}
 /*
     margin bottom
     used mostly for spacing between rows

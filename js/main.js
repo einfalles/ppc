@@ -4,7 +4,9 @@ $(document).ready(function(){
   $w.on('resize',res);
   res();
 
-
+  $("#class-submit").on('click',function(){
+    console.log($("form").serialize());
+  });
 
   // HELPER FUNCTIONS
   function res() {
