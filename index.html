@@ -13,6 +13,7 @@
     <script type="text/javascript" src="//fast.fonts.net/jsapi/28394dc8-a147-472a-9bb3-fffe4195ae88.js"></script>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 </head>
 <body>
   <header>
@@ -21,7 +22,7 @@
       <li><a href="#class-picker" id="classes">Classes</a></li>
       <li><a href="./gallery.html">Gallery</a></li>
       <li><a href="./" style="border:0;"><img src="http://www.mysteryboxshow.com/wp-content/uploads/2014/02/Pacific-Pie-Sponsor.png" width="70%" height="auto" style="border:0;"/></a></li>
-      <li><a href="#">Catering</a></li>
+      <li><a href="#catering-picker" id="catering">Catering</a></li>
       <li><a href="#">Press</a></li>
       <li><a href="./about.html">About</a></li>
     </ul>
@@ -62,14 +63,12 @@
     <div class="hero has-push-hover mb-4">
       <div class="container">
         <ul class="carousel push-hover">
-          <!-- <li class="carousel__item anti-push">
-            <div class="carousel__image">
-              <img src=""/>
-            </div>
-            <div class="carousel__line">
-              <button class="button-secondary z-1 mb-0">Read More Reviews</button>
-            </div>
-          </li> -->
+          <div class="slideup">
+            <li class="carousel__item" style="background-image: url(http://static1.squarespace.com/static/54244b5ae4b0aded9e49efc4/t/5463b6fde4b0097b957b8017/1415821055168/Wes+Anderson+Spoof.png);"></li>
+            <li class="carousel__item" style="background-image: url(./img/delicious-choc.jpg);"></li>
+            <li class="carousel__item" style="background-image: url(./img/perfect_crumb.jpg);"></li>
+            <li class="carousel__item" style="background-image: url(./img/rolling-2.jpg);"></li>
+          </div>
         </ul>
         <div class="anti-push">
           <h2 class="text-dark mb-6">Try our delicious pies. Save a table for dinner!</h2>
@@ -296,6 +295,16 @@
         <iframe src="./classes.html"></iframe>
       </div>
   </div>
+  <div id="catering-picker" class="overlay">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+      <div class="close-catering-picker">
+        <span class="text-dark cursor-pointer floater" >CLOSE</span>
+      </div>
+
+      <div class="modal-content">
+        <iframe src="./catering.html"></iframe>
+      </div>
+  </div>
   <!-- SCRIPTS -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
@@ -303,10 +312,49 @@
   <script src="http://joaopereirawd.github.io/animatedModal.js/js/animatedModal.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/simplemodal/1.4.4/jquery.simplemodal.min.js"></script>
   <script src="js/main.js"></script>
-
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <style>
+  .slideup {
+    height: 100%;
+    transition: all 0.5s ease;
+  }
+  </style>
   <script>
-    $("#reserve").animatedModal();
-    $("#classes").animatedModal({modalTarget:'class-picker'});
+    var current = 0;
+    $(document).ready(function(){
+      $("#reserve").animatedModal();
+      $("#classes").animatedModal({modalTarget:'class-picker'});
+      $("#catering").animatedModal({modalTarget:'catering-picker'});
+      var slides = $(".slideup li").length
+      setInterval(scroll,6000);
+      function scroll(){
+        // console.log("yo");
+        if (current <= slides-1) {
+          var pos = current*100*-1;
+          $(".slideup").css({
+         transform: 'translateY('+pos+'%)',
+ MozTransform: 'translateY('+pos+'%)',
+ WebkitTransform: 'translateY('+pos+'%)',
+ msTransform: 'translateY('+pos+'%)',
+});
+          current = current + 1;
+          console.log(current);
+        } else{
+          current = 0;
+          $(".slideup").css({
+         transform: 'translateY('+pos+'%)',
+ MozTransform: 'translateY('+pos+'%)',
+ WebkitTransform: 'translateY('+pos+'%)',
+ msTransform: 'translateY('+pos+'%)',
+});
+        }
+      }
+      // $('.carousel').slick({
+      //   infinite: true,
+      //   slidesToShow: 2,
+      //   slidesToScroll: 2
+      // });
+    });
   </script>
 </body>
 </html>

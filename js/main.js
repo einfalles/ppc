@@ -19,7 +19,7 @@ $(document).ready(function(){
   }
   $('#menu-select').change(function(){
     console.log(this.value);
-    if (this.value == 'drink') {
+    if (this.value == 'drinks') {
       var item = '#' + this.value;
       $(item).show();
       $('.content .section').not($(item)).hide();

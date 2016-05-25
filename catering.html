@@ -1,0 +1,190 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Best Pie In Portland</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+
+    <script type="text/javascript" src="//fast.fonts.net/jsapi/28394dc8-a147-472a-9bb3-fffe4195ae88.js"></script>
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<link rel="stylesheet" href="http://grandfandb.com/assets/css/default.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+	<div class="modal__wrapper">
+		<div class="container p-remove  pos-cen-cen">
+			<div class="grid twelve" style="overflow: auto;padding-top:2.5rem;">
+				<div class="column six">
+					<div class="modal__wrapper--image modal-catering">
+						<h3 class="bold text-dark">Pacific Pie Catering</h3>
+					</div>
+					<div class="menu__wrapper" style="width: 95%;">
+            <div id="catering-sweets">
+              <div class="catering-header">
+                Sweets
+              </div>
+              <div class="catering-item">
+                <div class="catering-item-title">Cookies</div>
+                <div class="catering-item-note">$1.50 each</div>
+                <div class="catering-item-description">Cowboy Cookies, Anzac Biscuits,Monthly Cookie Special</div>
+              </div>
+              <div class="catering-item">
+                <div class="catering-item-title">Tarts</div>
+                <div class="catering-item-note">$5.50 each</div>
+                <div class="catering-item-description">Chocolate Salted Caramel Tart, Pecan Pie Bar, Chocolate Raspberry Ganache</div>
+              </div>
+              <div class="catering-item">
+                <div class="catering-item-title">Bar Cookies &amp; Brownies</div>
+                <div class="catering-item-note">$2.50 each; 15 piece minimum</div>
+                <div class="catering-item-description">Lemon Bars, Chocolate Caramel Slice,Marionberry Hazelnut Bars, Brownies</div>
+              </div>
+              <div class="catering-item">
+                <div class="catering-item-title">Dessert Platter</div>
+                <div class="catering-item-note">$45; Serves 8-12</div>
+                <div class="catering-item-description">A selection of bite size pies, cookies, and brownies that is sure to tempt and delight your guests!</div>
+              </div>
+            </div>
+
+            <div id="catering-sweet-pies">
+              <div class="catering-header">
+                Group Salads
+              </div>
+              <div class="catering-header-note">
+                $35 each. Group salads serve 8-10 people.
+              </div>
+              <div class="catering-item">
+                <div class="catering-item-title">Organic Green Salad</div>
+                <div class="catering-item-description">Fresh mixed greens, carrots, radishes, tomatoes, and your choice of dressing: Balsamic Vinaigrette, Ranch, Caesar, or Ginger Soy</div>
+              </div>
+              <div class="catering-item">
+                <div class="catering-item-title">Kale Salad</div>
+                <div class="catering-item-description">A customer favorite! Shredded kale in an addictive sriracha spiked dressing with carrots and sunflower seeds</div>
+              </div>
+              <div class="catering-item">
+                <div class="catering-item-title">Arugala Salad</div>
+                <div class="catering-item-description">Organic Arugula, roasted butternut squash, feta, currants, candied walnuts, balsamic vinaigrette. </div>
+              </div>
+              <div class="catering-item">
+                <div class="catering-item-title">Aussie Caesar Salad</div>
+                <div class="catering-item-description">Crisp Romaine tossed in our lemony caesar dressing with pecorino cheese &amp; bacon. </div>
+              </div>
+              <div class="catering-item">
+                <div class="catering-item-title">Beet Salad</div>
+                <div class="catering-item-description">Organic baby spinach, roasted beets, oranges, goat cheese, balsamic vinaigrette. </div>
+              </div>
+            </div>
+
+					</div> <!--  menu wrapper end-->
+				</div> <!--  -->
+
+				<div class="column six" style="position: absolute; top:5%;overflow: auto">
+					<div class="modal__wrapper--form">
+						<form accept-charset="UTF-8" action="https://formspringbot.herokuapp.com/handle-email" method="POST" class="form inline-form">
+						<span class="upper"> <!-- START: Upper -->
+							<span class="inline">Hi, my name is </span>
+							<span>
+								<span class="auto-width" style="display: none;">asdf</span>
+								<input id="name" name="name" class="name" type="text" placeholder="Full Name" dir="auto" aria-label="What is your full name?  We need your full name" aria-required="true" required="" pattern=".* .*" title="We need your full name" aria-invalid="true" style="width: 13rem;">
+								,
+							</span>
+							<span class="inline">I am planning an catering </span>
+							<span class="inline">meal for a </span>
+							<select id="people" name="people" aria-label="Who is your event for?  " aria-required="true" required="">
+								<option value="wedding">Wedding</option>
+								<option value="conference">Conference/Event</option>
+								<option value="lunch">Business Lunch</option>
+								<option value="friends">Group of Friends</option>
+							</select>
+							<span class="inline">on </span>
+							<input type="date" id="date" dir="auto" name="date" value="" aria-label="When is your event?  " title="When is your event?" required="" placeholder="00/00/0000">
+							<span class="inline">at </span>
+							<input type="time" id="time" dir="auto" name="time" value="12:00" aria-label="What time do you want the event to start?  " required="">,
+							<span class="inline">serving </span>
+							<span>
+								<span class="auto-width" style="display:none!important;"></span>
+								<input name="peoplecount" id="peoplecount" class="peoplecount" type="text" value="" placeholder="100" maxlength="4" aria-label="How many people are we serving?  Must be a number greater than 0" title="How many people?" required="" dir="auto">
+							</span>
+							<span class="inline">people. </span>
+						</span> <!-- END: Upper -->
+
+						<span class="lower"> <!-- START: Lower -->
+							<span class="inline">I can be reached by email at </span>
+
+							<span>
+								<span class="auto-width" style="display:none!important;"></span>
+								<input name="email" id="email" class="email" type="text" value="" placeholder="name@website.com" data-subline="For example: <em>email@me.com</em>" required="" title="What's your email?" dir="auto" aria-label="What is your Email?  Must be a valid email address">,
+							</span>
+
+							<span class="inline">and/or called at</span>
+							<span>
+								<span class="auto-width" style="display:none!important;"></span>
+								<input name="phone" id="phone" class="phone" type="text" value="" placeholder="(555) 555-5555" data-subline="For example: <em>(123) 456-7890</em>" dir="auto" aria-label="Can we call you?  ">.
+							</span>
+						</span> <!-- END: Lower -->
+						<span class="lower">
+							<textarea contenteditable="true" name="description" rows="2" cols="40" placeholder="Add any additional notes" class="description"></textarea>
+						</span>
+						<span>
+							<button id="class-submit" onclick="alert('Thanks! We will be in touch soon.')"class="button button--secondary submit" name="submit" type="submit" value="Submit Inquiry">Submit Inquiry</button>
+						</span>
+						</form>
+					</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+  <!-- SCRIPTS -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> -->
+  <script src="js/plugins.js"></script>
+  <script src="http://joaopereirawd.github.io/animatedModal.js/js/animatedModal.min.js"></script>
+  <script src="js/main.js"></script>
+
+	    <script type="text/javascript">
+
+	  // ---------------
+	  // Dynamic Form JS
+	  // ---------------
+	  $(document).ready(function($) {
+	      $("select").change(function() {
+	          var a = $(this),
+	              t = $.map(a.find("option"), function(a) {
+	                  return a.value.toLowerCase()
+	              }).join(" ");
+	          $("." + this.name).removeClass(t).addClass($(this).val().toLowerCase())
+	      })
+	  });
+	  var valFix = function(a) {
+	  ! function() {
+	      var t = a.val(),
+	          n = function() {
+	              t !== parseInt(a.val()) && a.attr("value", a.val())
+	          },
+	          e = setInterval(function() {
+	              n()
+	          }, 100)
+	  }()
+	  };
+	  valFix($("#test"));
+
+	    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	   // some code..
+	    }else
+	    {
+	      $('input[type="text"]').keypress(function(a) {
+	          if (0 !== a.which && 0 !== a.charCode) {
+	              var t = String.fromCharCode(a.keyCode | a.charCode);
+	              $span = $(this).siblings("span").first(), $span.text($(this).val() + t), $inputSize = $span.width(), $(this).css("width", $inputSize)
+	          }
+	      })
+	    }
+	  </script>
+</body>
+</html>
