@@ -19,17 +19,37 @@ $(document).ready(function(){
   }
   $('#menu-select').change(function(){
     console.log(this.value);
-    if (this.value == 'drinks') {
-      var item = '#' + this.value;
-      $(item).show();
-      $('.content .section').not($(item)).hide();
-    }
-    if (this.value == 'lunch') {
+    if (this.value == 'breakfast') {
       var item = '#' + this.value;
       $(item).show();
       $('.content .section').not($(item)).hide();
     }
     if (this.value == 'dinner') {
+      var item = '#' + this.value;
+      $(item).show();
+      $('.content .section').not($(item)).hide();
+    }
+    if (this.value == 'drinks') {
+      var item = '#' + this.value;
+      $(item).show();
+      $('.content .section').not($(item)).hide();
+    }
+    if (this.value == 'dessert') {
+      var item = '#' + this.value;
+      $(item).show();
+      $('.content .section').not($(item)).hide();
+    }
+    if (this.value == 'hh') {
+      var item = '#' + this.value;
+      $(item).show();
+      $('.content .section').not($(item)).hide();
+    }
+    if (this.value == 'kids') {
+      var item = '#' + this.value;
+      $(item).show();
+      $('.content .section').not($(item)).hide();
+    }
+    if (this.value == 'togo') {
       var item = '#' + this.value;
       $(item).show();
       $('.content .section').not($(item)).hide();
