@@ -609,6 +609,12 @@ h6 {
 .button-secondary:hover {
    background-color: #5f5f5f !important;
 }
+.button-social {
+  background-color: rgb(47,75,110);
+  font-weight: 500;
+  text-transform: none;
+  font-family: 'Avenir W01',Helvetica, Arial, sans-serif;
+}
 
 .yellow:after {
    background-color: pink;
