@@ -14,6 +14,7 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <!-- <link type="text/css" rel="stylesheet" href="css/lightslider.css" /> -->
 </head>
 <body>
   <header>
@@ -60,9 +61,34 @@
   }
   </script>
   <div id="main">
-    <div class="hero has-push-hover mb-4">
+    <div class="h-66 mb-2">
+      <ul id="lightSlider">
+        <li class="item-a">
+          <h3 class="tagline">delicious pie</h3>
+          <img src="./img/delicious-choc.jpg"/>
+        </li>
+        <li class="item-b">
+          <h3 class="tagline">delicious two</h3>
+          <img src="./img/perfect_crumb.jpg"/>
+        </li>
+        <li class="item-c">
+          <h3 class="tagline">delicious three</h3>
+          <img src="./img/perfect_crumb.jpg"/>
+        </li>
+        <li class="item-d">
+          <h3 class="tagline">delicious four</h3>
+          <img src="./img/perfect_crumb.jpg"/>
+        </li>
+        <li class="item-e">
+          <h3 class="tagline">delicious five</h3>
+          <img src="./img/perfect_crumb.jpg"/>
+        </li>
+
+      </ul>
+    </div>
+    <!-- <div class="hero has-push-hover mb-4">
       <div class="container">
-        <ul class="carousel push-hover">
+        <ul class="carousel push-hover" id="lightSlider">
           <div class="slideup">
             <li class="carousel__item" style="background-image: url(http://static1.squarespace.com/static/54244b5ae4b0aded9e49efc4/t/5463b6fde4b0097b957b8017/1415821055168/Wes+Anderson+Spoof.png);"></li>
             <li class="carousel__item" style="background-image: url(./img/delicious-choc.jpg);"></li>
@@ -73,17 +99,14 @@
         <div class="anti-push">
           <h2 class="text-dark mb-6">Try our delicious pies. Save a table for dinner!</h2>
           <button id="reserve" href="#animatedModal" class="button-secondary button-green z-1 mb-0" >Reserve</button>
-          <!-- <div class="OTButton"> -->
-            <!-- <script type="text/javascript" src="https://secure.opentable.com/ism/link.aspx?rid=213073&restref=213073&bgimage=https://secure.opentable.com/img/frontDoor/ot_btn_red.png"></script> -->
-          <!-- </div> -->
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="content">
       <div class="section mb-1" id="location">
-        <div class="mb-4 text-align-center">
+        <!-- <div class="mb-4 text-align-center">
           <h2>Our Locations</h2>
-        </div>
+        </div> -->
         <div class="container">
           <div class="grid">
             <div class="column four">
@@ -308,20 +331,45 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/simplemodal/1.4.4/jquery.simplemodal.min.js"></script>
   <script src="js/main.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <!-- <script type="text/javascript" src="./js/vendor/lightslider.min.js"></script> -->
   <style>
   .slideup {
     height: 100%;
     transition: all 0.5s ease;
   }
   </style>
+
   <script>
     var current = 0;
     $(document).ready(function(){
+      // $("#lightSlider").lightSlider({
+      //   gallery: false,
+      //   controls: false,
+      //   item: 3,
+      //   // autoWidth:true,
+      //   loop:true,
+      //   onSliderLoad: function() {
+      //       $('#lightSlider').removeClass('cs-hidden');
+      //     }
+      // });
+    $("#lightSlider").slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  speed: 300,
+  centerMode: true,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  variableWidth: true
+});
+
       $("#reserve").animatedModal();
       $("#classes").animatedModal({modalTarget:'class-picker'});
       $(".catering").animatedModal({modalTarget:'catering-picker'});
       var slides = $(".slideup li").length
-      setInterval(scroll,6000);
+      // setInterval(scroll,6000);
+      // scroll();
       function scroll(){
         // console.log("yo");
         if (current <= slides-1) {
