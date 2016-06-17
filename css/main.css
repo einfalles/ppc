@@ -897,6 +897,15 @@ h6 {
   top: 50%;
   left: 10%;
 }
+.banner {
+  position: absolute;
+  z-index: 99;
+  width: calc(100% - 1.5rem);
+  background-color: pink;
+  text-align: center;
+  padding: 8px 0;
+  margin-top: 10%;
+}
 .slick-slide {
   margin: 0 20px;
 }
