@@ -496,7 +496,9 @@ h6 {
   position: absolute;
   right: 0;
 }
-
+.quote .content__wrapper {
+  height: auto;
+}
    .border--alt span {
      font-family: 'Avenir', Helvetica, Arial, sans-serif !important;
      color: rgba(0,0,0,0.35) !important;
@@ -505,7 +507,7 @@ h6 {
      margin-bottom: 0.5rem !important;
    }
    .border--alt h4 {
-     font-size: 2rem !important;
+     font-size: 1.25rem !important;
      font-family:'New Century Schoolbook W01', 'Garamond', sans-serif !important;
      color: black !important;
      margin-bottom:1rem;
