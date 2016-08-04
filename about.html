@@ -17,19 +17,18 @@
   <header>
     <ul class="navigation">
       <li><a href="./menu.html">Menus</a></li>
-      <li><a id="demo01" href="./classes.html">Classes</a></li>
+      <li><a href="#class-picker" id="classes">Classes</a></li>
       <li><a href="./gallery.html">Gallery</a></li>
       <li><a href="./" style="border:0;"><img src="http://www.mysteryboxshow.com/wp-content/uploads/2014/02/Pacific-Pie-Sponsor.png" width="70%" height="auto" style="border:0;"/></a></li>
-      <li><a href="#">Catering</a></li>
-      <li><a href="#">Press</a></li>
+      <li><a href="#catering-picker" class="catering">Catering</a></li>
+      <li><a href="./press.html">Press</a></li>
       <li><a href="./about.html">About</a></li>
     </ul>
   </header>
-
   <div id="main">
     <div class="hero">
       <div class="container twelve">
-        <div class="grid pos-cen-cen" style="background-image: url(./img/PP_578.jpg);background-position:0 35%;">
+        <div class="grid pos-cen-cen" style="background-image: url(http://www.pacificpie.com/wp-content/uploads/2012/07/cc-Chris_Sarah.jpeg);background-position:0 35%;">
           <div class="column width--50  pos-cen-cen">
             <div class="hero__wrapper">
               <div class="hero__information">
@@ -61,7 +60,7 @@
             </div>
             <div class="column four h-50">
               <div class="content__wrapper">
-                <div class="bg-image" style="background-image:url(http://p-fst1.pixstatic.com/51bceb8cdbd0cb1efb00183b._w.1000_s.fit_.jpg);"></div>
+                <div class="bg-image" style="background-image:url(./img/PP_578.jpg);background-position: 20% center;"></div>
               </div>
             </div>
           </div>
@@ -104,65 +103,64 @@
       </div>
     </div>
   </div>
+ 
+  <footer class="m-h-20">
+    <div class="container">
+      <div class="grid pos-left-cen">
+        <div class="column">
+          <div class="footer__item">
+            <h4>Want to stay up to date?</h4>
+            <form method="post" id="newsletter" action="/">
 
-    <footer class="m-h-20">
-      <div class="container">
-        <div class="grid pos-left-cen">
-          <div class="column">
-            <div class="footer__item">
-              <h4>Stay up to date</h4>
-              <form method="post" id="newsletter" action="/">
-                <div class="form-group">
-                    <input type="text" id="emailchimp" name="EMAIL" placeholder="Enter your e-mail address" class="form-control kikk-newsletter__input">
-                    <input type="submit" value="OK" class="form__submit">
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="column one invisible"></div>
-          <div class="column">
-            <div class="footer__item">
-              <h4>Company</h4>
-              <ul>
-                <li><a href="" class="link--alt">Our story</a></li>
-                <li><a href="" class="link--alt">Careers</a></li>
-                <li><a href="" class="link--alt">Press</a></li>
-                <li><a href="" class="link--alt">Donations</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="column">
-            <div class="footer__item">
-              <h4>Services</h4>
-              <ul>
-                <li><a href="" class="link--alt">Restaurant</a></li>
-                <li><a href="" class="link--alt">Online Ordering</a></li>
-                <li><a href="" class="link--alt">Catering</a></li>
-                <li><a href="" class="link--alt">Wholesale</a></li>
-                <li><a href="" class="link--alt">Pie Sale</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="column">
-            <div class="footer__item">
-              <h4>Social</h4>
-              <ul>
-                <li><a href="" class="link--alt">Email</a></li>
-                <li><a href="" class="link--alt">Instagram</a></li>
-                <li><a href="" class="link--alt">Facebook</a></li>
-                <li><a href="" class="link--alt">Yelp</a></li>
-                <li><a href="" class="link--alt">Recipes</a></li>
-              </ul>
-            </div>
+              <a class="button-secondary button-social" href="https://www.instagram.com/pacificpieco/">Follow Us On Instagram</a>
+            </form>
           </div>
         </div>
-        <hr style="width:10%; margin: 2rem auto;">
-        <div class="grid copyright pos-cen-cen">
-          <span style="color: rgba(0,0,0,0.5); font-size: 0.875rem;">© 2009-2016 PACIFIC PIE | ALL RIGHTS RESERVED | OPEN NOW </span>
+        <div class="column one invisible"></div>
+        <div class="column">
+          <div class="footer__item">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="./about.html" class="link--alt">Our story</a></li>
+              <li><a href="" class="link--alt">Careers</a></li>
+              <li><a href="./press.html" class="link--alt">Press</a></li>
+              <li><a href="" class="link--alt">Contact Us</a></li>
+              <!-- <li><a href="" class="link--alt">Donations</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer__item">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="" class="link--alt">Restaurant</a></li>
+              <!-- <li><a href="" class="link--alt">Online Ordering</a></li> -->
+              <li><a a href="#catering-picker" class="catering link--alt">Catering</a></li>
+              <!-- <li><a href="" class="link--alt">Wholesale</a></li> -->
+              <!-- <li><a href="" class="link--alt">Pie Sale</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer__item">
+            <h4>Social</h4>
+            <ul>
+              <li><a href="" class="link--alt">Email</a></li>
+              <li><a href="" class="link--alt">Instagram</a></li>
+              <li><a href="" class="link--alt">Facebook</a></li>
+              <li><a href="" class="link--alt">Yelp</a></li>
+              <li><a href="" class="link--alt">Twitter</a></li>
+              <!-- <li><a href="" class="link--alt">Recipes</a></li> -->
+            </ul>
+          </div>
         </div>
       </div>
-    </footer>
-
+      <hr style="width:10%; margin: 2rem auto;">
+      <div class="grid copyright pos-cen-cen">
+        <span style="color: rgba(0,0,0,0.5); font-size: 0.875rem;">© 2009-2016 PACIFIC PIE | ALL RIGHTS RESERVED</span>
+      </div>
+    </div>
+  </footer>
 
   <!-- SCRIPTS -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

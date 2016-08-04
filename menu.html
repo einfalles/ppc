@@ -14,6 +14,7 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 </head>
 <body>
   <header>
@@ -28,7 +29,7 @@
     </ul>
   </header>
   <div id="main">
-    <div class="hero p-remove mb-1">
+    <div class="hero p-remove mb-2">
       <div class="container twelve">
         <div class="grid pos-cen-cen" style="background-image: url(./img/blueberry.jpg); background-position-y: 80%;">
           <div class="column six pos-cen-cen">
@@ -542,7 +543,7 @@
           <div class="grid pos-left-top">
 
             <!--  MENU SECTION START-->
-            <div class="column twelve">
+            <div class="column twelve pos-cen-cen">
               <div class="menu__wrapper">
 
                 <div class="menu__header mb-6">
@@ -578,7 +579,7 @@
           <div class="pos-left-top">
 
             <!--  MENU SECTION START-->
-            <div class="column six">
+            <div class="column twelve pos-cen-cen">
               <div class="menu__wrapper">
 
                 <div class="menu__header mb-6">
@@ -611,7 +612,7 @@
 
       <div class="section mb-1 hide" id="togo">
         <div class="container">
-          <div class="pos-left-top">
+          <div class="grid pos-left-top">
 
             <!--  MENU SECTION START-->
             <div class="column four">
@@ -626,9 +627,9 @@
                     <hr/>
                   </div>
                 </div>
-                <div id="togo-dessert">
+                <div id="dick">
                   <script>
-                  $("#togo-desert").load('./partials/togo_desserts.csv.html', function( response, status, xhr ) {
+                  $("#dick").load('./partials/togo_desserts.csv.html', function( response, status, xhr ) {
                     if ( status == "error" ) {
                       var msg = "Sorry but there was an error: ";
                       $( "#error" ).html( msg + xhr.status + " " + xhr.statusText );
@@ -657,6 +658,15 @@
                   </script>
                 </div>
 
+
+
+              </div>
+            </div>
+            <!--  MENU SECTION END-->
+            <!--  MENU SECTION START-->
+            <div class="column four">
+              <div class="menu__wrapper">
+
                 <div class="menu__header mb-6">
                   <div class="menu__divider">
                     <hr/>
@@ -677,12 +687,6 @@
                   </script>
                 </div>
 
-              </div>
-            </div>
-            <!--  MENU SECTION END-->
-            <!--  MENU SECTION START-->
-            <div class="column four">
-              <div class="menu__wrapper">
 
                 <div class="menu__header mb-6">
                   <div class="menu__divider">
@@ -781,6 +785,7 @@
 
     </div>
   </div>
+  
   <footer class="m-h-20">
     <div class="container">
       <div class="grid pos-left-cen">
@@ -801,6 +806,7 @@
               <li><a href="./about.html" class="link--alt">Our story</a></li>
               <li><a href="" class="link--alt">Careers</a></li>
               <li><a href="./press.html" class="link--alt">Press</a></li>
+              <li><a href="" class="link--alt">Contact Us</a></li>
               <!-- <li><a href="" class="link--alt">Donations</a></li> -->
             </ul>
           </div>
@@ -810,7 +816,7 @@
             <h4>Services</h4>
             <ul>
               <li><a href="" class="link--alt">Restaurant</a></li>
-              <li><a href="" class="link--alt">Online Ordering</a></li>
+              <!-- <li><a href="" class="link--alt">Online Ordering</a></li> -->
               <li><a a href="#catering-picker" class="catering link--alt">Catering</a></li>
               <!-- <li><a href="" class="link--alt">Wholesale</a></li> -->
               <!-- <li><a href="" class="link--alt">Pie Sale</a></li> -->
@@ -825,6 +831,7 @@
               <li><a href="" class="link--alt">Instagram</a></li>
               <li><a href="" class="link--alt">Facebook</a></li>
               <li><a href="" class="link--alt">Yelp</a></li>
+              <li><a href="" class="link--alt">Twitter</a></li>
               <!-- <li><a href="" class="link--alt">Recipes</a></li> -->
             </ul>
           </div>
@@ -907,7 +914,7 @@
   </div>
   <!-- SCRIPTS -->
 
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
   <script src="js/plugins.js"></script>
 
   <script src="http://joaopereirawd.github.io/animatedModal.js/js/animatedModal.min.js"></script>
