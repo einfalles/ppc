@@ -1,0 +1,6 @@
+the new 2. add new menu items to lunch and dinner
+2. they want a new staff page
+the new 3. look at potential designs
+---
+3. where is this staff page location? in the header or footer? what is the purpose?
+4. how should it be designed? what is the layout that is consistent with what we have now?
