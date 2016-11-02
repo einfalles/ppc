@@ -368,7 +368,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family:'Tablet Gothic W01';
+  /*font-family:'Avenir W01';*/
+  font-family: 'New Century Schoolbook W01';
   font-weight: 600;
   margin: 0;
   color: rgba(0,0,0,0.7);
@@ -500,7 +501,7 @@ h6 {
   height: auto;
 }
    .border--alt span {
-     font-family: 'Avenir', Helvetica, Arial, sans-serif !important;
+     font-family: 'Avenir W01', Helvetica, Arial, sans-serif !important;
      color: rgba(0,0,0,0.35) !important;
      letter-spacing: 1px !important;
      font-weight: 700 !important;
@@ -518,7 +519,7 @@ h6 {
    LINKS
    ========================================================================== */
  a {
-   font-family:'Tablet Gothic W01','Avenir W01',Helvetica,Arial, sans-serif;
+   font-family: 'Avenir W01',Helvetica,Arial, sans-serif;
    text-decoration: none;
    color: rgba(0,0,0,0.3);
    font-size: 1rem;
@@ -939,8 +940,14 @@ h6 {
 .item-c { width:800px; background-color:pink;}
 .item-d { width:800px; background-color:pink;}
 .item-e { width:800px; background-color:pink;}
+.h-90 {
+  height: 90vh !important;
+}
 .h-80 {
  height: 80vh !important;
+}
+.h-70 {
+  height: 70vh !important;
 }
 .h-50 {
  height: 50vh !important;
