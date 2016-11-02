@@ -22,10 +22,10 @@
   <header>
     <ul class="navigation">
       <li><a href="./menu.html">Menus</a></li>
-      <li><a href="#class-picker" id="classes">Classes</a></li>
+      <li><a href="./classes.html" id="classes">Classes</a></li>
       <li><a href="./gallery.html">Gallery</a></li>
       <li><a href="./" style="border:0;"><img src="http://www.mysteryboxshow.com/wp-content/uploads/2014/02/Pacific-Pie-Sponsor.png" width="95%" height="auto" style="border:0;"/></a></li>
-      <li><a href="#catering-picker" class="catering">Catering</a></li>
+      <li><a href="./catering.html" class="catering">Catering</a></li>
       <li><a href="./press.html">Press</a></li>
       <li><a href="./about.html">About</a></li>
     </ul>
@@ -321,26 +321,7 @@
         <iframe src="http://www.opentable.com/pacific-pie-co-reservations-portland?rtype=ism&restref=213073"></iframe>
       </div>
   </div>
-  <div id="class-picker" class="overlay">
-      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-      <div class="close-class-picker">
-        <span class="text-dark cursor-pointer floater" >CLOSE</span>
-      </div>
 
-      <div class="modal-content">
-        <iframe src="./classes.html"></iframe>
-      </div>
-  </div>
-  <div id="catering-picker" class="overlay">
-      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-      <div class="close-catering-picker">
-        <span class="text-dark cursor-pointer floater" >CLOSE</span>
-      </div>
-
-      <div class="modal-content">
-        <iframe src="./catering.html"></iframe>
-      </div>
-  </div>
   <!-- SCRIPTS -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
@@ -393,8 +374,6 @@
   variableWidth: true
 });
       $("#reserve").animatedModal();
-      $("#classes").animatedModal({modalTarget:'class-picker'});
-      $(".catering").animatedModal({modalTarget:'catering-picker'});
       var slides = $(".slideup li").length
       // setInterval(scroll,6000);
       // scroll();
