@@ -1,0 +1,57 @@
+<div class="column six" style="top:5%;overflow: auto">
+  <div class="modal__wrapper--form">
+    <form accept-charset="UTF-8" action="https://formspringbot.herokuapp.com/handle-email" method="POST" class="form inline-form">
+    <span class="upper" style=" font-family: 'Avenir W01' !important; font-size:2rem;
+"> <!-- START: Upper -->
+      <span class="inline">Hi, my name is </span>
+      <span>
+        <span class="auto-width" style="display: none;">asdf</span>
+        <input id="name" name="name" class="name" type="text" placeholder="Full Name" dir="auto" aria-label="What is your full name?  We need your full name" aria-required="true" required="" pattern=".* .*" title="We need your full name" aria-invalid="true" style="width: 13rem;">
+        ,
+      </span>
+      <span class="inline">I am planning an catering </span>
+      <span class="inline">meal for a </span>
+      <select id="people" name="people" aria-label="Who is your event for?  " aria-required="true" required="">
+        <option value="wedding">Wedding</option>
+        <option value="conference">Conference/Event</option>
+        <option value="lunch">Business Lunch</option>
+        <option value="friends">Group of Friends</option>
+      </select>
+      <span class="inline">on </span>
+      <input type="date" id="date" dir="auto" name="date" value="" aria-label="When is your event?  " title="When is your event?" required="" placeholder="00/00/0000">
+      <span class="inline">at </span>
+      <input type="time" id="time" dir="auto" name="time" value="12:00" aria-label="What time do you want the event to start?  " required="">,
+      <span class="inline">serving </span>
+      <span>
+        <span class="auto-width" style="display:none!important;"></span>
+        <input name="peoplecount" id="peoplecount" class="peoplecount" type="text" value="" placeholder="100" maxlength="4" aria-label="How many people are we serving?  Must be a number greater than 0" title="How many people?" required="" dir="auto">
+      </span>
+      <span class="inline">people. </span>
+    </span> <!-- END: Upper -->
+
+    <span class="lower"> <!-- START: Lower -->
+      <span class="inline">I can be reached by email at </span>
+
+      <span>
+        <span class="auto-width" style="display:none!important;"></span>
+        <input name="email" id="email" class="email" type="text" value="" placeholder="name@website.com" data-subline="For example: <em>email@me.com</em>" required="" title="What's your email?" dir="auto" aria-label="What is your Email?  Must be a valid email address">,
+      </span>
+
+      <span class="inline">and/or called at</span>
+      <span>
+        <span class="auto-width" style="display:none!important;"></span>
+        <input name="phone" id="phone" class="phone" type="text" value="" placeholder="(555) 555-5555" data-subline="For example: <em>(123) 456-7890</em>" dir="auto" aria-label="Can we call you?  ">.
+      </span>
+    </span> <!-- END: Lower -->
+    <span class="lower">
+      <textarea contenteditable="true" name="description" rows="2" cols="40" placeholder="Add any additional notes" class="description"></textarea>
+    </span>
+    <span>
+      <button id="class-submit" onclick="alert('Thanks! We will be in touch soon.')"class="button button--secondary submit" name="submit" type="submit" value="Submit Inquiry">Submit Inquiry</button>
+      <a class="button button--secondary" href="https://orders.portlandpedalpower.com/">Portland Pedal Power</a>
+      <a style="    margin-top: 0.25rem;" class="button button--secondary" href="http://www.ddish.com/">Delivered Dish</a>
+      <a style="    margin-top: 0.25rem;" class="button button--secondary" href="https://www.grubhub.com/restaurant/pacific-pie-company-1668-nw-23rd-ave-portland/330187?utm_source=bing&utm_medium=cpc&utm_campaign=Portland,%20OR%20%7C%20Portland,%20OR%20%7C%20Restaurants&utm_term=%20pacific%20%20pie&efkwid=27209992387&ef_id=VvmimAAABUKPQfqb:20161102234930:s">GrubHub</a>
+    </span>
+    </form>
+  </div>
+</div>

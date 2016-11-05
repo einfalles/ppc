@@ -368,8 +368,7 @@ h3,
 h4,
 h5,
 h6 {
-  /*font-family:'Avenir W01';*/
-  font-family: 'New Century Schoolbook W01';
+  font-family:'Avenir W01';
   font-weight: 600;
   margin: 0;
   color: rgba(0,0,0,0.7);
@@ -399,7 +398,7 @@ h6 {
 .hero h4,
 .hero h5,
 .hero h6 {
-  font-family:'New Century Schoolbook W01', 'Garamond', sans-serif;
+  font-family:'Avenir W01', 'Garamond', sans-serif;
   color: white;
 }
 
@@ -425,7 +424,7 @@ h6 {
 }
 .about__wrapper h2 {
   font-size: 3rem;
-  font-family:'New Century Schoolbook W01', 'Garamond', sans-serif;
+  font-family:'Avenir W01', 'Garamond', sans-serif;
   text-transform: none;
 }
    .bold {
@@ -440,7 +439,7 @@ h6 {
      transform: rotate(90deg) translateY(-640%);;
    }
    .dropcap {
-     font-family:'New Century Schoolbook W01', 'Garamond', sans-serif;
+     font-family:'Avenir W01', 'Garamond', sans-serif;
      font-size:8rem;
      float: left; color: #903;
      line-height: 5.666rem;
@@ -509,7 +508,7 @@ h6 {
    }
    .border--alt h4 {
      font-size: 1.25rem !important;
-     font-family:'New Century Schoolbook W01', 'Garamond', sans-serif !important;
+     font-family:'Avenir W01', 'Garamond', sans-serif !important;
      color: black !important;
      margin-bottom:1rem;
      text-transform: none !important;
@@ -773,7 +772,7 @@ h6 {
 }
 .menu__item--title span:not(.menu__item--price) {
   font-weight: 600;
-  font-family:'New Century Schoolbook W01', 'Garamond', sans-serif;
+  font-family:'Avenir W01', 'Garamond', sans-serif;
 }
 .menu__item--price {
   margin-left: auto;
@@ -915,7 +914,7 @@ h6 {
   top: 0;
 }
 .slick-slide {
-  margin: 0 1.5rem;
+  margin: 0 0.75rem;
 }
 .lSSlideOuter {
   height: 100%;
@@ -1012,7 +1011,7 @@ h6 {
   left: 0;
   line-height: 1;
   font-size:12rem;
-  font-family: 'New Century Gothic' !important;
+  font-family: 'Avenir W01' !important;
 }
 
 .square {
