@@ -22,37 +22,46 @@ $(document).ready(function(){
     if (this.value == 'breakfast') {
       var item = '#' + this.value;
       $(item).show();
+      $("#menu-download").attr('href','./img/menu/breakfast.pdf');
       $('.content .section').not($(item)).hide();
     }
     if (this.value == 'dinner') {
       var item = '#' + this.value;
       $(item).show();
+      $("#menu-download").attr('href','./img/menu/dinner.pdf');
       $('.content .section').not($(item)).hide();
     }
     if (this.value == 'drinks') {
       var item = '#' + this.value;
       $(item).show();
+      $("#menu-download").attr('href','./img/menu/drinks.pdf');
       $('.content .section').not($(item)).hide();
     }
     if (this.value == 'dessert') {
       var item = '#' + this.value;
       $(item).show();
+      $("#menu-download").attr('href','./img/menu/dessert.pdf');
       $('.content .section').not($(item)).hide();
     }
     if (this.value == 'hh') {
       var item = '#' + this.value;
       $(item).show();
+      $("#menu-download").attr('href','./img/menu/hh.pdf');
       $('.content .section').not($(item)).hide();
     }
     if (this.value == 'kids') {
       var item = '#' + this.value;
       $(item).show();
+      $("#menu-download").attr('href','./img/menu/kids.jpg');
       $('.content .section').not($(item)).hide();
     }
     if (this.value == 'togo') {
       var item = '#' + this.value;
       $(item).show();
+      $("#menu-download").attr('href','./img/menu/togo.pdf');
       $('.content .section').not($(item)).hide();
     }
   });
+
+
 });

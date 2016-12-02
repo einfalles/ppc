@@ -55,6 +55,7 @@
                   <option value="kids">Kid's Menu</option>
                   <option value="togo">To Go</option>
               </select>
+              <a id="menu-download" target="_blank" href="" style="color:lightblue;position:absolute;top: -4px;right: 24%;">Download this menu</a>
             </p>
           </div>
         </div>
@@ -921,9 +922,20 @@
   <script src="js/main.js"></script>
   <script>
   $(document).ready(function(){
-    $("#reserve").animatedModal();
-    $("#classes").animatedModal({modalTarget:'class-picker'});
-    $(".catering").animatedModal({modalTarget:'catering-picker'});
+    var d = new Date();
+    var hour = d.getHours();
+    var day = d.getDay();
+    switch(true){
+      case (hour < 11):
+        $("#menu-select").val("breakfast").change();
+        break;
+      case (hour < 20 && hour > 11):
+        $("#menu-select").val("dinner").change();
+        break;
+      case (hour > 20):
+        $("#menu-select").val("drinks").change();
+        break;
+    }
   });
   </script>
 </body>
