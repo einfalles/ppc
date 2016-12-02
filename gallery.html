@@ -320,6 +320,7 @@
           target: 'yo',
           template: '<img src="{{image}}"/>',
           after: function(){
+            alert('yo');
             var temp = []
             $("#yo img").each(function(){
               temp.push(this.src);
@@ -355,9 +356,6 @@
 
       })();
 
-      // $(".insta-image").each(function(index){
-      //   $(this).css('background-image','url('+temp[index]+')')
-      // });
 
   </script>
 </body>
