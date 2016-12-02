@@ -1,4 +1,4 @@
-/*
+a/*
 
 - make a class for switching between column and row flexbox
 - fix miles, bold, text-sub, full, quote, border, border--alt, button secondary, glyph
@@ -253,6 +253,7 @@ header {
 .press__title,.press__author {
   color:rgba(0,0,0,0.25);
   font-size:1.15rem;
+  margin-bottom: 4px;
 }
 .press__wrapper:hover .press__title,
 .press__wrapper:hover .press__author {
@@ -260,13 +261,24 @@ header {
 
 }
 .press__wrapper a {
-  transition: none;
+  transition: all 250ms ease-out;
+  border:0 !important;
 }
  .press__wrapper a:hover {
    border-bottom: 0 !important;
    color:rgba(0,0,0,1);
  }
+ .press__title:after {
+    content: "\a0";
+    display: block;
+    /*padding: 2px 0;*/
+    line-height: 0px;
+    border-bottom: 2px solid rgba(0,0,0,0);
 
+ }
+.press__wrapper a:hover .press__title:after {
+  border-bottom: 2px solid rgba(0,0,0,0.8);
+}
 .hero {
   position: relative;
   top: 0;
@@ -539,6 +551,10 @@ h6 {
    text-transform: none;
    letter-spacing: 0.5px;
  }
+
+.underline-light-blue:hover {
+  border-bottom: 2px solid lightblue;
+}
 .underline-dark {
   display: inline-block;
   border-bottom: 2px solid white;
@@ -558,7 +574,7 @@ h6 {
    font-weight: 600;
    color: rgba(0,0,0,0.5);
  }
- .button-secondary {
+ .button-primary {
    position: relative;
    display: inline-block;
    padding: 0.25rem 1rem;
@@ -576,7 +592,7 @@ h6 {
    border-radius: 2px;
    transition: background-color 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
  }
- .button-secondary:before {
+ .button-primary:before {
    content: "";
    display: block;
    position: absolute;
@@ -591,7 +607,7 @@ h6 {
    animation: hover-out 0.2s 1
  }
 
-.button-secondary:after {
+.button-primary:after {
    content: "";
    position: absolute;
    z-index: -1;
@@ -605,27 +621,71 @@ h6 {
    transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
    animation: hover-out 0.4s 1;
 }
-.button-secondary:hover {
+.button-primary:hover {
    color: #fff;
    transition: background-color 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), color 0.2s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1)
 }
-.button-secondary:hover {
+.button-primary:hover {
    background-color: #5f5f5f !important;
 }
-.button-social {
-  background-color: rgb(47,75,110);
-  font-weight: 500;
-  text-transform: none;
-  font-family: 'Avenir W01',Helvetica, Arial, sans-serif;
+.button-secondary {
+    position: relative;
+    display: inline-block;
+    padding: 0 1em;
+    background-color: transparent;
+    vertical-align: middle;
+    min-width: 200px;
+    color: black;
+    overflow: hidden;
+    line-height: 2.5;
+    font-family: Interstate-Condensed,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 0;
+    border: 2px solid #1c1d21;
+    transition: background-color .2s cubic-bezier(.215,.61,.355,1),color .3s cubic-bezier(.215,.61,.355,1);
+   font-family: 'Avenir W01',Helvetica, Arial, sans-serif;
+   z-index: 1;
 }
 
-.yellow:after {
-   background-color: pink;
+
+.button-secondary:after {
+  display: block;
+    position: absolute;
+    color: #fff;
+    height: 100%;
+    background-color: #1c1d21 !important;
+    transition: all .2s cubic-bezier(.55,.055,.675,.19);
+    width: 100%;
+    z-index: -1;
+    left: 0;
+    content: "";
 }
-.yellow:hover {
-   background-color: pink !important;
+.button-secondary:hover {
+    color: #fff;
+    transition: background-color .2s cubic-bezier(.215,.61,.355,1),color .2s .25s cubic-bezier(.215,.61,.355,1);
+}
+a:hover.button-secondary {
+  border-bottom: 2px solid black !important;
 }
 .button-secondary:hover:after {
+    animation: hover-in .25s 1;
+    transform: translateY(-100%);
+}
+.button-tertiary {
+
+}
+/*.button-secondary:hover {
+  background-color: #5f5f5f !important;
+}*/
+.button-primary.button-yellow:before {
+  background-color: pink;
+}
+.button-primary.button-red:before {
+  background-color: #da3743;
+}
+
+.button-primary:hover:after {
    animation: hover-in 0.25s 1;
    transform: translateY(-100%);
 }
