@@ -235,9 +235,7 @@ header {
   color: white;
   letter-spacing: 0.5px;
 }
-.press-1 {background-image:url(http://g-ecx.images-amazon.com/images/G/01/img15/pet-products/small-tiles/30423_pets-products_january-site-flip_3-cathealth_short-tile_592x304._CB286975940_.jpg)}
-.press-2 {background-image:url(https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg);}
-.press-3 {background-image:url(http://www.telegraph.co.uk/content/dam/science/2016/03/14/cat_3240574b-large_trans++pJliwavx4coWFCaEkEsb3kvxIt-lGGWCWqwLa_RXJU8.jpg);}
+
 .press__wrapper {
   min-height: 140px;
   width: 100%;
@@ -250,22 +248,25 @@ header {
   background-size:0;
 }
 .press__wrapper:hover {
-  background-color: pink;
-  background-size: cover;
-  background-position: center center;
-  -webkit-filter: brightness(0.8);
-  filter: brightness(0.8);
+
 }
 .press__title,.press__author {
-  color: black;
+  color:rgba(0,0,0,0.25);
   font-size:1.15rem;
 }
 .press__wrapper:hover .press__title,
 .press__wrapper:hover .press__author {
-  color:white;
-  -webkit-filter: brightness(2);
-  filter: brightness(2);
+  color:rgba(0,0,0,0.75);
+
 }
+.press__wrapper a {
+  transition: none;
+}
+ .press__wrapper a:hover {
+   border-bottom: 0 !important;
+   color:rgba(0,0,0,1);
+ }
+
 .hero {
   position: relative;
   top: 0;
